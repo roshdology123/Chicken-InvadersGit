@@ -11,11 +11,6 @@ public class RocketMovement : MonoBehaviour
     float verticalMove = 0f;    
     public Animator animator;
 
-    private void Start()
-    {
-        Rigidbody2D rocket = GetComponent<Rigidbody2D>();
-        
-    }
 
     void Update()
     {
@@ -25,7 +20,7 @@ public class RocketMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        rocket.MovePosition(rocket.position + movement * speed * Time.fixedDeltaTime);
+        rocket.MovePosition(rocket.position + speed * Time.fixedDeltaTime * movement);
         horizontalMove = Input.GetAxis("Horizontal") * speed;
         verticalMove = Input.GetAxis("Vertical") * speed;
 
