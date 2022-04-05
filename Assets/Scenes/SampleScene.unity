@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 257392401}
   - component: {fileID: 257392402}
   - component: {fileID: 257392403}
+  - component: {fileID: 257392404}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -298,6 +299,8 @@ MonoBehaviour:
   firePoint: {fileID: 1595389599}
   bulletPrefab: {fileID: 2250270333590266130, guid: 77a58836c2ab27741a67de30a7fc169c, type: 3}
   rb: {fileID: 257392399}
+  fireRate: 2
+  nextFire: 0
 --- !u!114 &257392403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,6 +315,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 20
   rb: {fileID: 257392399}
+--- !u!114 &257392404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257392395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b52a2b67bf08c1e4398f85bd9e087b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
