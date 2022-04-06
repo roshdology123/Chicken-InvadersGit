@@ -152,7 +152,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -597,7 +597,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1540,7 +1540,7 @@ GameObject:
   - component: {fileID: 1644895485}
   - component: {fileID: 1644895484}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: LowerEdgeOfScene
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1684,7 +1684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816130722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.42, y: 0.42, z: -92.32079}
+  m_LocalPosition: {x: -2.7, y: 0.42, z: -92.32079}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 939006811}
@@ -1732,6 +1732,7 @@ MonoBehaviour:
   eggSpeed: 5
   rb: {fileID: -9126911729582177633, guid: e39a12512f908984397b78d489383925, type: 3}
   bullet: {fileID: 5018810880892473998, guid: 68a4a758180e93c40b094fc201cd4069, type: 3}
+  animator: {fileID: 5018810880892473987, guid: 68a4a758180e93c40b094fc201cd4069, type: 3}
 --- !u!4 &1986741121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3824877499763761480, guid: e39a12512f908984397b78d489383925, type: 3}
