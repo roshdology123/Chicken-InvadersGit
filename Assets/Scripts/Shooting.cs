@@ -9,7 +9,7 @@ public class Shooting : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    public float fireRate = 2f;
+    public static float fireRate = 0.8f;
     public float nextFire = 0f;
        
 

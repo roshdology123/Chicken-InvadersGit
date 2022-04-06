@@ -654,7 +654,6 @@ MonoBehaviour:
   firePoint: {fileID: 1595389599}
   bulletPrefab: {fileID: 2250270333590266130, guid: 77a58836c2ab27741a67de30a7fc169c, type: 3}
   rb: {fileID: 257392399}
-  fireRate: 0.22
   nextFire: 0
 --- !u!114 &257392403
 MonoBehaviour:
