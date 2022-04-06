@@ -6,7 +6,7 @@ public class Bondaries : MonoBehaviour
 {
     void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -2f, 2f),
-                   Mathf.Clamp(transform.position.y, -4f, 4f), transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -5f, 5f),
+                   Mathf.Clamp(transform.position.y, -6f, 6f), transform.position.z);
     }
 }
