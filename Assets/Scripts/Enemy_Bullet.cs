@@ -16,7 +16,7 @@ public class Enemy_Bullet : MonoBehaviour
     {
         rb.velocity = - transform.up * eggSpeed;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -25,6 +25,7 @@ public class Enemy_Bullet : MonoBehaviour
             Destroy(bullet);
 
         }
+
         if (collision.gameObject.CompareTag("Finish"))
         {
             animator.SetFloat("speed", Mathf.Abs(0));
