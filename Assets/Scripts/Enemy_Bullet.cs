@@ -9,7 +9,7 @@ public class Enemy_Bullet : MonoBehaviour
     public GameObject bullet;
     public GameObject explosion;
     public GameObject rocket;
-    int count = 0;
+  //  int count = 0;
 
 
     public Animator animator;
@@ -25,18 +25,12 @@ public class Enemy_Bullet : MonoBehaviour
             GameObject clone = (GameObject)Instantiate(explosion, transform.position, transform.rotation);
             Destroy(collision.gameObject);
             Destroy(clone, 1.5f);
-            count+=1;
-            if (count < 3)
+            asteroid_0.count+=1;
+            if (asteroid_0.count< 3)
             {
-                Invoke("showRocket", 1.7f);
-                
-            }else
-            {
-                Destroy(collision.gameObject);//to stop the asteroids falling
+                Invoke("showRocket", 1.7f);       
             }
-
         }
-
         if (collision.gameObject.CompareTag("Finish"))
         {
             animator.SetFloat("speed", Mathf.Abs(0));
@@ -57,7 +51,6 @@ public class Enemy_Bullet : MonoBehaviour
     }
     void showRocket()
     {
-        Debug.Log("Hello");
         Instantiate(rocket);
     }
 

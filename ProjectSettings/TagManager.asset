@@ -9,6 +9,7 @@ TagManager:
   - Egg
   - Asteroid
   - drumstick
+  - bullet
   layers:
   - Default
   - TransparentFX

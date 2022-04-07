@@ -8,7 +8,7 @@ public class asteroid_0 : MonoBehaviour
     private float speed;
     public float asteroidRate=-17f;
     public GameObject explosion;
-    int count = 0;
+    public static int count = 0;
    public GameObject rocket;
     public GameObject bullet;
     public Rigidbody2D rb;
@@ -43,10 +43,7 @@ public class asteroid_0 : MonoBehaviour
             if(count<3){
                  Invoke("showRocket", 1.7f);
             }else if(other.gameObject.CompareTag("bullet")){
-                Destroy(bullet);    
-            }   else{
-                Destroy(this.gameObject);//to stop the asteroids falling
-            }    
+                Destroy(bullet);      
         }
         if (other.gameObject.CompareTag("Finish") || other.gameObject.CompareTag("Player"))
         {
@@ -54,6 +51,7 @@ public class asteroid_0 : MonoBehaviour
         }
 
 
+    }
     }
     void showRocket(){
         Instantiate(rocket);
