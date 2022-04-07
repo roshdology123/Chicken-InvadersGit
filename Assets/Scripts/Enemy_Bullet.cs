@@ -21,7 +21,7 @@ public class Enemy_Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
-            
+
             Destroy(bullet);
 
         }
@@ -29,9 +29,10 @@ public class Enemy_Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Finish"))
         {
             animator.SetFloat("speed", Mathf.Abs(0));
+            rb.velocity = Vector3.zero;
             StartCoroutine(WaitThenDie());
-
             
+
         }
         if (collision.gameObject.CompareTag("Egg"))
         {
