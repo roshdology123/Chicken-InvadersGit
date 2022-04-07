@@ -155,5 +155,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 20
-  rb: {fileID: 2250270333590266132}
+  drumstickSpeed: 10
+  bulletRb: {fileID: 2250270333590266132}
   bullet: {fileID: 2250270333590266130}
+  drumstick: {fileID: 6724269385772488735, guid: 028b67afbb7317642a1da7087d15d1e8, type: 3}
+  chicken: {fileID: 3824877499763761480, guid: e39a12512f908984397b78d489383925, type: 3}
+  torque: 10
+  drumstickRb: {fileID: -6675664106505521494, guid: 028b67afbb7317642a1da7087d15d1e8, type: 3}

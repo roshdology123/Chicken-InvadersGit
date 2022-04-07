@@ -7,7 +7,9 @@ public class Enemy_Bullet : MonoBehaviour
     public float eggSpeed = 5f;
     public Rigidbody2D rb;
     public GameObject bullet;
-
+    public GameObject explosion;
+    public GameObject rocket;
+    int count = 3;
 
 
     public Animator animator;
@@ -20,6 +22,15 @@ public class Enemy_Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            GameObject clone = (GameObject)Instantiate(explosion, transform.position, transform.rotation);
+            Destroy(clone, 1.5f);
+            if (count < 3)
+            {
+                Invoke("showRocket", 1.7f);
+            }else
+            {
+                Destroy(this.gameObject);//to stop the asteroids falling
+            }
             Destroy(collision.gameObject);
 
             Destroy(bullet);
@@ -43,6 +54,10 @@ public class Enemy_Bullet : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         Destroy(bullet);
+    }
+    void showRocket()
+    {
+        Instantiate(rocket);
     }
 
 }

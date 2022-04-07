@@ -1982,6 +1982,8 @@ MonoBehaviour:
   eggSpeed: 5
   rb: {fileID: -9126911729582177633, guid: e39a12512f908984397b78d489383925, type: 3}
   bullet: {fileID: 5018810880892473998, guid: 68a4a758180e93c40b094fc201cd4069, type: 3}
+  explosion: {fileID: 0}
+  rocket: {fileID: 0}
   animator: {fileID: 5018810880892473987, guid: 68a4a758180e93c40b094fc201cd4069, type: 3}
 --- !u!4 &1986741121 stripped
 Transform:
