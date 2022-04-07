@@ -57,6 +57,7 @@ public class Enemy_Bullet : MonoBehaviour
     }
     void showRocket()
     {
+        Debug.Log("Hello");
         Instantiate(rocket);
     }
 
