@@ -32,12 +32,10 @@ public class asteroid_0 : MonoBehaviour
         transform.position=newPosition;
         speed=Random.Range(10f,15f);
     }
-    void OnTriggerEnter2D(Collider2D other){
-        
+    void OnTriggerEnter2D(Collider2D other){  
         if(other.gameObject.CompareTag("Player")){
             GameObject clone =(GameObject)Instantiate(explosion,transform.position,transform.rotation);
             Destroy(other.gameObject);
-                        // Debug.Log("Asteroid destroyed");
             Destroy(clone,1.5f);
             count+=1;
             if(count<3){
@@ -49,8 +47,6 @@ public class asteroid_0 : MonoBehaviour
         {
             newAsteroid();
         }
-
-
     }
     }
     void showRocket(){

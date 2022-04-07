@@ -2075,6 +2075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gift
       objectReference: {fileID: 0}
+    - target: {fileID: 8759466745328468611, guid: 434cfe6fae56b0f429e5bd7929477bb8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8759466745328468613, guid: 434cfe6fae56b0f429e5bd7929477bb8, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -2123,5 +2127,9 @@ PrefabInstance:
       propertyPath: Gift
       value: 
       objectReference: {fileID: 8759466745328468609, guid: 434cfe6fae56b0f429e5bd7929477bb8, type: 3}
+    - target: {fileID: 8759466745328468614, guid: 434cfe6fae56b0f429e5bd7929477bb8, type: 3}
+      propertyPath: giftRate
+      value: -17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 434cfe6fae56b0f429e5bd7929477bb8, type: 3}
