@@ -7,9 +7,19 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     public GameObject eggPrefab;
     public Transform firePoint;
+    public HealthBar healthBar;
+    public GameObject bossExplosion;
+ 
+
     void Update()
     {
         FireBossEgg();
+        if (Health.TotalHealth <= 0)
+        {
+            GameObject clone = (GameObject)Instantiate(bossExplosion, transform.position, transform.rotation);
+            Destroy(clone, 1.5f);
+            Destroy(gameObject);
+        }
     }
     void FireBossEgg()
     {
@@ -17,6 +27,13 @@ public class Boss : MonoBehaviour
         {
             Instantiate(eggPrefab, firePoint.position, firePoint.rotation);
 
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "bullet")
+        {
+            healthBar.Damage(0.08f);
         }
     }
 }

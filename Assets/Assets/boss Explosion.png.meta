@@ -1,13 +1,28 @@
 fileFormatVersion: 2
-guid: 7560cdcefed488f49a974fff10dd6081
+guid: 98663f0a2ad664c4cb1a6686ee02828f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3603393583186040492
-    second: chicken2_0
+      213: -7384591752320331315
+    second: boss Explosion_0
   - first:
-      213: -981625349117035686
-    second: chicken2_1
+      213: 5328664064758398522
+    second: boss Explosion_1
+  - first:
+      213: -1990818308951377841
+    second: boss Explosion_2
+  - first:
+      213: -3531108533057100179
+    second: boss Explosion_3
+  - first:
+      213: 7807956220131620447
+    second: boss Explosion_4
+  - first:
+      213: 6126977244583801529
+    second: boss Explosion_5
+  - first:
+      213: -8952191187092950006
+    second: boss Explosion_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +124,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chicken2_0
+      name: boss Explosion_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 150
-        width: 100
-        height: 95
+        x: 56
+        y: 586
+        width: 188
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca6d9bf4f53d10230800000000000000
-      internalID: 3603393583186040492
+      spriteID: dc1daaf2de8a48990800000000000000
+      internalID: -7384591752320331315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chicken2_1
+      name: boss Explosion_1
       rect:
         serializedVersion: 2
-        x: 60
-        y: 5
-        width: 110
-        height: 100
+        x: 292
+        y: 559
+        width: 207
+        height: 181
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +159,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5b3c5322f09062f0800000000000000
-      internalID: -981625349117035686
+      spriteID: a3e30530cb733f940800000000000000
+      internalID: 5328664064758398522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss Explosion_2
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 540
+        width: 242
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48fb9abb413f54e0800000000000000
+      internalID: -1990818308951377841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss Explosion_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 349
+        width: 234
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66e7cf6f7bfefec0800000000000000
+      internalID: -3531108533057100179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss Explosion_4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 337
+        width: 204
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f563fba50de6b5c60800000000000000
+      internalID: 7807956220131620447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss Explosion_5
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 326
+        width: 197
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2b1528755670550800000000000000
+      internalID: 6126977244583801529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss Explosion_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 123
+        width: 206
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0431fbcb8d63c380800000000000000
+      internalID: -8952191187092950006
       vertices: []
       indices: 
       edges: []

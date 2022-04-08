@@ -43,6 +43,7 @@ public class Enemy_Bullet : MonoBehaviour
         {
             Destroy(bullet);
         }
+       
     }
     IEnumerator WaitThenDie()
     {
