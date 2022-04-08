@@ -43,11 +43,12 @@ public class asteroid_0 : MonoBehaviour
             }else if(other.gameObject.CompareTag("bullet")){
                 Destroy(bullet);      
         }
+        
+    }
         if (other.gameObject.CompareTag("Finish") || other.gameObject.CompareTag("Player"))
         {
             newAsteroid();
         }
-    }
     }
     void showRocket(){
         Instantiate(rocket);

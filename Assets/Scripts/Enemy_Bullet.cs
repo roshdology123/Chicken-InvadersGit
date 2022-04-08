@@ -23,13 +23,13 @@ public class Enemy_Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GameObject clone = (GameObject)Instantiate(explosion, transform.position, transform.rotation);
-            Destroy(collision.gameObject);
             Destroy(clone, 1.5f);
             asteroid_0.count+=1;
             if (asteroid_0.count< 3)
             {
-                Invoke("showRocket", 1.7f);       
+                collision.gameObject.transform.position = new Vector3(-7.03f, -8.66f, 0f);
             }
+            Debug.Log("Executed From Enemy Bullet");
         }
         if (collision.gameObject.CompareTag("Finish"))
         {
@@ -50,9 +50,6 @@ public class Enemy_Bullet : MonoBehaviour
         yield return new WaitForSeconds(3);
         Destroy(bullet);
     }
-    void showRocket()
-    {
-        Instantiate(rocket);
-    }
+
 
 }

@@ -21,13 +21,15 @@ public class Boss_Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GameObject clone = (GameObject)Instantiate(explosion, transform.position, transform.rotation);
-            Destroy(collision.gameObject);
+            
             Destroy(clone, 1.5f);
+            rocket.SetActive(false);
             asteroid_0.count+=1;
             if (asteroid_0.count< 3)
             {
                 Invoke("showRocket", 1.7f);       
             }
+            Debug.Log("Executed");
         }
         if (collision.gameObject.CompareTag("Finish"))
         {
@@ -35,10 +37,7 @@ public class Boss_Bullet : MonoBehaviour
             rb.velocity = Vector3.zero;
             StartCoroutine(WaitThenDie());
         }
-        if (collision.gameObject.CompareTag("Egg"))
-        {
-            Destroy(bullet);
-        }
+
     }
     IEnumerator WaitThenDie()
     {
