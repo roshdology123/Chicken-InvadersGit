@@ -2,16 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Bullet : MonoBehaviour
+public class Boss_Bullet : MonoBehaviour
 {
+    // Start is called before the first frame update
     public float eggSpeed = 5f;
     public Rigidbody2D rb;
     public GameObject bullet;
     public GameObject explosion;
     public GameObject rocket;
- 
-
-
     public Animator animator;
 
     void Start()
@@ -36,8 +34,6 @@ public class Enemy_Bullet : MonoBehaviour
             animator.SetFloat("speed", Mathf.Abs(0));
             rb.velocity = Vector3.zero;
             StartCoroutine(WaitThenDie());
-            
-
         }
         if (collision.gameObject.CompareTag("Egg"))
         {

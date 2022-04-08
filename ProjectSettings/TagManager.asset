@@ -10,6 +10,7 @@ TagManager:
   - Asteroid
   - drumstick
   - bullet
+  - boss
   layers:
   - Default
   - TransparentFX
