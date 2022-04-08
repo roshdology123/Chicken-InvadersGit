@@ -27,30 +27,25 @@ public class asteroid_0 : MonoBehaviour
       }  
     }
     void newAsteroid(){
-        float randomNumber=Random.Range(-11f,11f);
+        float randomNumber=Random.Range(-7.8f,7.8f);
         Vector2 newPosition=new Vector2(randomNumber,7);
         transform.position=newPosition;
         speed=Random.Range(10f,15f);
     }
     void OnTriggerEnter2D(Collider2D other){  
         if(other.gameObject.CompareTag("Player")){
-            GameObject clone =(GameObject)Instantiate(explosion,transform.position,transform.rotation);
-            Destroy(other.gameObject);
+            GameObject clone =(GameObject)Instantiate(explosion,transform.position,transform.rotation);       
             Destroy(clone,1.5f);
             count+=1;
-            if(count<3){
-                 Invoke("showRocket", 1.7f);
+            if(count<=3){
+                  other.gameObject.transform.position = new Vector3(-7.03f, -8.66f, 0f);
             }else if(other.gameObject.CompareTag("bullet")){
                 Destroy(bullet);      
+            }
         }
-        
-    }
         if (other.gameObject.CompareTag("Finish") || other.gameObject.CompareTag("Player"))
         {
             newAsteroid();
         }
-    }
-    void showRocket(){
-        Instantiate(rocket);
     }
 }

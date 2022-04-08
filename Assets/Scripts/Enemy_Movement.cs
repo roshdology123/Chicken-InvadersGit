@@ -18,7 +18,7 @@ public class Enemy_Movement : MonoBehaviour
             timer = 0;
             numOfMovements += 1;
         }
-        if(numOfMovements == 8)
+        if(numOfMovements == 18)
         {
             speed = -speed;
             numOfMovements = 0;

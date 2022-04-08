@@ -19,7 +19,7 @@ public class Boss_Movement : MonoBehaviour
             timer = 0;
             numOfMovements += 1;
         }
-        if(numOfMovements == 8)
+        if(numOfMovements == 13)
         {
             speed = -speed;
             numOfMovements = 0;

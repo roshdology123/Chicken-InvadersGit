@@ -11,6 +11,8 @@ TagManager:
   - drumstick
   - bullet
   - boss
+  - Flames
+  - safe
   layers:
   - Default
   - TransparentFX

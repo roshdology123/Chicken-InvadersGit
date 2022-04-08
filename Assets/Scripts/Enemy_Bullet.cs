@@ -25,25 +25,17 @@ public class Enemy_Bullet : MonoBehaviour
             GameObject clone = (GameObject)Instantiate(explosion, transform.position, transform.rotation);
             Destroy(clone, 1.5f);
             asteroid_0.count+=1;
-            if (asteroid_0.count< 3)
+            if (asteroid_0.count<= 3)
             {
                 collision.gameObject.transform.position = new Vector3(-7.03f, -8.66f, 0f);
             }
-            Debug.Log("Executed From Enemy Bullet");
         }
         if (collision.gameObject.CompareTag("Finish"))
         {
             animator.SetFloat("speed", Mathf.Abs(0));
             rb.velocity = Vector3.zero;
             StartCoroutine(WaitThenDie());
-            
-
         }
-        if (collision.gameObject.CompareTag("Egg"))
-        {
-            Destroy(bullet);
-        }
-       
     }
     IEnumerator WaitThenDie()
     {

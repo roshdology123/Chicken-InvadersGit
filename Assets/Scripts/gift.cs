@@ -21,7 +21,7 @@ public class gift : MonoBehaviour
       }  
     }
     void newGift(){
-        float randomNumber=Random.Range(-11f,11f);
+        float randomNumber=Random.Range(-7.8f,7.8f);
         Vector2 newPosition=new Vector2(randomNumber,7);
         transform.position=newPosition;
         speed=Random.Range(1f,5f);
