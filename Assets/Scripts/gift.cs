@@ -31,7 +31,7 @@ public class gift : MonoBehaviour
           if (asteroid_0.count<3){
              Shooting.fireRate*=0.75f;
              }
-            }else{
+            }else if(asteroid_0.count == 3){
                 Shooting.fireRate= 0.8f;
             }
         if (other.gameObject.CompareTag("Finish") || other.gameObject.CompareTag("Player"))

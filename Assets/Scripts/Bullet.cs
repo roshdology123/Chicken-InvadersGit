@@ -26,6 +26,7 @@ public class Bullet : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, drumstickRotation, Time.deltaTime * 5f);
             Instantiate(drumstick, transform.position, transform.rotation);
             Destroy(collision.gameObject);
+            Count.counter--;
             Destroy(bullet);
 
         }
@@ -36,6 +37,7 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("boss"))
         {
             Destroy(bullet);
+            
         }
     }
 

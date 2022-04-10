@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RocketMovement : MonoBehaviour
 {
@@ -10,8 +11,12 @@ public class RocketMovement : MonoBehaviour
     float horizontalMove = 0f;
     float verticalMove = 0f;    
     public Animator animator;
+    public Text scoretext;
 
-
+    void Start()
+    {
+        scoretext.text = "Score: " + Score.totalscore;
+    }
     void Update()
     {
         movement.x = Input.GetAxis("Horizontal");
@@ -35,6 +40,15 @@ public class RocketMovement : MonoBehaviour
         
 
 
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "drumstick")
+        {
+            Score.totalscore += 1;
+            scoretext.text = "Score: " + Score.totalscore;
+
+        }
     }
 
 }

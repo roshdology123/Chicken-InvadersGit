@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Enemy_Bullet : MonoBehaviour
 {
     public float eggSpeed = 5f;
@@ -25,9 +25,16 @@ public class Enemy_Bullet : MonoBehaviour
             GameObject clone = (GameObject)Instantiate(explosion, transform.position, transform.rotation);
             Destroy(clone, 1.5f);
             asteroid_0.count+=1;
-            if (asteroid_0.count<= 3)
+            if (asteroid_0.count< 3)
             {
                 collision.gameObject.transform.position = new Vector3(-7.03f, -8.66f, 0f);
+            }
+            else if(asteroid_0.count == 3)
+            {
+                SceneManager.LoadScene("LoseMenu");
+                asteroid_0.count = 0;
+                Score.totalscore = 0;
+                Shooting.fireRate = 0.8f;
             }
         }
         if (collision.gameObject.CompareTag("Finish"))

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class asteroid_0 : MonoBehaviour
 {
@@ -37,10 +38,17 @@ public class asteroid_0 : MonoBehaviour
             GameObject clone =(GameObject)Instantiate(explosion,transform.position,transform.rotation);       
             Destroy(clone,1.5f);
             count+=1;
-            if(count<=3){
+            if(count<3){
                   other.gameObject.transform.position = new Vector3(-7.03f, -8.66f, 0f);
             }else if(other.gameObject.CompareTag("bullet")){
                 Destroy(bullet);      
+            }
+            else if (count ==3)
+            {
+                SceneManager.LoadScene("LoseMenu");
+                asteroid_0.count = 0;
+                Score.totalscore = 0;
+                Shooting.fireRate = 0.8f;
             }
         }
         if (other.gameObject.CompareTag("Finish") || other.gameObject.CompareTag("Player"))

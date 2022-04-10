@@ -19,6 +19,10 @@ public class Boss : MonoBehaviour
             GameObject clone = (GameObject)Instantiate(bossExplosion, transform.position, transform.rotation);
             Destroy(clone, 1.5f);
             Destroy(gameObject);
+            Count.bosscount--;
+            asteroid_0.count = 0;
+            Score.totalscore = 0;
+            Shooting.fireRate = 0.8f;
         }
     }
     void FireBossEgg()
@@ -33,7 +37,7 @@ public class Boss : MonoBehaviour
     {
         if (collision.tag == "bullet")
         {
-            healthBar.Damage(0.08f);
+            healthBar.Damage(0.005f);
         }
     }
 }

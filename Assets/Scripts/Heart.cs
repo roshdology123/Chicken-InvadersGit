@@ -18,8 +18,7 @@ public class Heart : MonoBehaviour
             Destroy(heart1);
         }else if (asteroid_0.count==2){
             Destroy(heart2);
-        }else if (asteroid_0.count==3){
-            Destroy(heart3);
+            Destroy(heart1);
         }
     }
 }
