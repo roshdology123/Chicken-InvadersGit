@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
+        FindObjectOfType<AudioManager>().Play("Shot");
         bulletRb.velocity = transform.up * bulletSpeed;
         
     }
@@ -28,6 +29,8 @@ public class Bullet : MonoBehaviour
             Destroy(collision.gameObject);
             Count.counter--;
             Destroy(bullet);
+            //.............................
+            FindObjectOfType<AudioManager>().Play("ChickenDeath");
 
         }
         if (collision.gameObject.CompareTag("Finish"))

@@ -37,7 +37,8 @@ public class asteroid_0 : MonoBehaviour
         if(other.gameObject.CompareTag("Player")){
             GameObject clone =(GameObject)Instantiate(explosion,transform.position,transform.rotation);       
             Destroy(clone,1.5f);
-            count+=1;
+            FindObjectOfType<AudioManager>().Play("RocketExp");
+            count +=1;
             if(count<3){
                   other.gameObject.transform.position = new Vector3(-7.03f, -8.66f, 0f);
             }else if(other.gameObject.CompareTag("bullet")){

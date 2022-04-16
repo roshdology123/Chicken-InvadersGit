@@ -35,6 +35,7 @@ public class drumstick : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(drumstickPrefab);
+            FindObjectOfType<AudioManager>().Play("Point");
         }
     }
     IEnumerator WaitThenDie()

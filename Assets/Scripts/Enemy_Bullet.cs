@@ -17,13 +17,16 @@ public class Enemy_Bullet : MonoBehaviour
     void Start()
     {
         rb.velocity = - transform.up * eggSpeed;
+        FindObjectOfType<AudioManager>().Play("Egg");
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+
             GameObject clone = (GameObject)Instantiate(explosion, transform.position, transform.rotation);
             Destroy(clone, 1.5f);
+            FindObjectOfType<AudioManager>().Play("RocketExp");
             asteroid_0.count+=1;
             if (asteroid_0.count< 3)
             {
