@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     }
     void FireEnemyEgg()
     {
-        if(Random.Range(0f,2000f) < 1)
+        if(Random.Range(0f,5000f) < 1)
         {
             Instantiate(eggPrefab, firePoint.position, firePoint.rotation);
 
