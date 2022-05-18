@@ -30,7 +30,7 @@ public class Enemy_Bullet : MonoBehaviour
             asteroid_0.count+=1;
             if (asteroid_0.count< 3)
             {
-                collision.gameObject.transform.position = new Vector3(-7.03f, -8.66f, 0f);
+                collision.gameObject.transform.position = new Vector3(-13.69f, -6.63f, 0f);
             }
             else if(asteroid_0.count == 3)
             {

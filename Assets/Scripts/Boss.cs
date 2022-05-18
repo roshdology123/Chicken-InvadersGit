@@ -27,7 +27,7 @@ public class Boss : MonoBehaviour
     }
     void FireBossEgg()
     {
-        if(Random.Range(0f,20f) < 1)
+        if(Random.Range(0f,400f) < 1)
         {
             Instantiate(eggPrefab, firePoint.position, firePoint.rotation);
 
@@ -37,7 +37,7 @@ public class Boss : MonoBehaviour
     {
         if (collision.tag == "bullet")
         {
-            healthBar.Damage(0.005f);
+            healthBar.Damage(0.009f);
         }
     }
 }

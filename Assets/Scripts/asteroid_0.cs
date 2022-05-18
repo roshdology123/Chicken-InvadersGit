@@ -16,7 +16,7 @@ public class asteroid_0 : MonoBehaviour
     public Transform Rocket;
    void Start()
     {
-        speed=Random.Range(10f,15f);
+        speed=Random.Range(5f,12f);
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class asteroid_0 : MonoBehaviour
       }  
     }
     void newAsteroid(){
-        float randomNumber=Random.Range(-7.8f,7.8f);
+        float randomNumber=Random.Range(-15f,15f);
         Vector2 newPosition=new Vector2(randomNumber,7);
         transform.position=newPosition;
         speed=Random.Range(10f,15f);
@@ -40,7 +40,7 @@ public class asteroid_0 : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("RocketExp");
             count +=1;
             if(count<3){
-                  other.gameObject.transform.position = new Vector3(-7.03f, -8.66f, 0f);
+                  other.gameObject.transform.position = new Vector3(-13.69f, -6.63f, 0f);
             }else if(other.gameObject.CompareTag("bullet")){
                 Destroy(bullet);      
             }
