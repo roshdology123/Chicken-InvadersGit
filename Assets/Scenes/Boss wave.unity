@@ -362,6 +362,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3807219423740021939, guid: 46a91e7b1bb0aed4ca5548eb9b53c927, type: 3}
+      propertyPath: m_ScaleFactor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3807219423740021949, guid: 46a91e7b1bb0aed4ca5548eb9b53c927, type: 3}
       propertyPath: m_Name
       value: Canvas (1)
@@ -483,7 +487,7 @@ Transform:
   m_GameObject: {fileID: 165675843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.58, y: 11.55, z: 58.22498}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1508690825}
   - {fileID: 132838957}
@@ -1285,7 +1289,7 @@ RectTransform:
   m_GameObject: {fileID: 556648774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalScale: {x: 1, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 512680717}
   - {fileID: 2089157692}
@@ -2336,7 +2340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 1.5
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
